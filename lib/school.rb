@@ -3,16 +3,16 @@ class School
 
     def initialize(name)
         @name = name
-        roster = {}
+        @roster = {}
     end
 
     def add_student(name, grade)
-        roster[grade] = [] if !roster.keys.include?(grade)
-        roster[grade] << name
+        @roster[grade] = [] if !roster.keys.include?(grade)
+        @roster[grade] << name
     end
 
     def grade(grade)
-        roster[grade]
+        @roster[grade]
     end
 
 end
