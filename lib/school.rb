@@ -19,4 +19,9 @@ class School
         @roster
     end
 
+    def sort
+        sorted_roster = {}
+        @roster.each {|key, value| sorted_roster << key = value.sorted}
+    end
+
 end
